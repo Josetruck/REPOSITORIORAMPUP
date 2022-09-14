@@ -1,0 +1,7 @@
+p span { color: rgb(86, 170, 106); } 
+h1 span { color: blue; } 
+p span em { font-size: x-large; }
+p a span em { color: blue; }
+/* p, a, span, em { color: blue; } */
+
+ p * a { color: red; } 
