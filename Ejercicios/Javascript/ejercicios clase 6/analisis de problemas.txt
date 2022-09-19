@@ -1,0 +1,32 @@
+Realiza un análisis del problema de un software que permita sumar o restar (una sóla opción por ejecución) números enteros.
+
+entradas: numero1 , numero2, operación (+ o -)
+salidas:    si operacion= + entonces numero1 + numero2
+            si operacion= - entonces numero1 - numero2
+
+Realiza un análisis del problema de un software que permita sumar y restar (ambas opciones por ejecución) números enteros.
+
+entradas: numero1 y numero2
+salidas: numero1 + numero2 y numero1 - numero2
+
+Realiza un análisis del problema de un software que permita contar las cantidad de veces que aparece la letra a en una frase solicitada al usuario
+
+entradas: frase y letra
+salida: número de veces que la letra está contenida en la frase.
+
+Realiza un análisis del problema de un software que permita indcar si un número entero es par o impar.
+
+entrada: numero entero
+salida: si el numero es par: verdadero y si el numero no es par: falso
+
+
+Realiza un análisis del problema de un software que permita obtener el número de cifras que contiene un número entero
+
+entrada: numero1
+salida: cantidad de cifras del numero1
+
+Realiza un análisis del problema de un software que permita validar a un usuario con su contraseña, ofreciéndole N intentos (N es un número entre 1 y 5 y se le asigna a cada usuario aleatoriamente). Si falla sus intentos, debe esperar entre 5 y 20 minutos (también se decide de forma aleatoria)
+
+entradas: credenciales registro: usuario1 y contraseña1, credenciales de validación: usuario2 y contraseña2, Nintentos(aleatorio), Ntiempo(aleatorio)
+salidas:    validación correcta, 
+            validación errónea, puede volver a intentarlo Nintentos, si no es correcto debe esperar Ntiempo.
