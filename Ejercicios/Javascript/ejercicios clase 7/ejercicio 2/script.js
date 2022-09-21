@@ -1,11 +1,19 @@
 // Contador de cifras.
 function contadorcifras() {
-    var x = prompt("Introduzca un numero entero")
-    var count = 0
-    for (let i = 0; i < x - 1; i++) {
-        count +1;
+    let x = parseInt(prompt("Introduzca un numero entero"));
+    var cont = 0;
+    /*do{
+        x = Math.floor(x / 10);
+        cont++;
+    }while(x != 0)*/
+    while (x != 0) {
+        x = Math.floor(x / 10);
+        cont++;
     }
-alert(count)
+    if (cont == 0) {
+        cont++;
+    }
+    alert("El numero de cifras es " + cont);
 }
 
 // Secuencia de *
@@ -54,20 +62,26 @@ function comparador() {
     var totaldias1 = 0;
     var totaldias2 = 0;
     if (mes1 > 12) {
-        alert("los años no tienen " + mes1 + " meses.")
+        alert("los años no tienen " + mes1 + " meses.");
     }
     if (mes2 > 12) {
-        alert("los años no tienen " + mes2 + " meses.")
+        alert("los años no tienen " + mes2 + " meses.");
     }
-    for (let i = 0; i <= mes1; i++) {
-        totaldias1 += diasenmes[i];
+    if (dia1 > diasenmes[mes1]){
+        alert("El mes "+ mes1+" no tiene "+ dia1 +" dias.");
+    } 
+    if (dia2 > diasenmes[mes2]){
+        alert("El mes "+ mes2+" no tiene "+ dia2 +" dias.");
     }
+        for (let i = 0; i <= mes1; i++) {
+            totaldias1 += diasenmes[i];
+        }
     for (let i = 0; i <= mes2; i++) {
         totaldias2 += diasenmes[i]; 2
     }
     totaldias1 += dia1;
     totaldias2 += dia2;
-    diferencia = totaldias1 - totaldias2;  
+    diferencia = totaldias1 - totaldias2;
     if (diferencia < 0) {
         diferencia = diferencia * -1;
     }
