@@ -67,15 +67,15 @@ function comparador() {
     if (mes2 > 12) {
         alert("los años no tienen " + mes2 + " meses.");
     }
-    if (dia1 > diasenmes[mes1]){
-        alert("El mes "+ mes1+" no tiene "+ dia1 +" dias.");
-    } 
-    if (dia2 > diasenmes[mes2]){
-        alert("El mes "+ mes2+" no tiene "+ dia2 +" dias.");
+    if (dia1 > diasenmes[mes1]) {
+        alert("El mes " + mes1 + " no tiene " + dia1 + " dias.");
     }
-        for (let i = 0; i <= mes1; i++) {
-            totaldias1 += diasenmes[i];
-        }
+    if (dia2 > diasenmes[mes2]) {
+        alert("El mes " + mes2 + " no tiene " + dia2 + " dias.");
+    }
+    for (let i = 0; i <= mes1; i++) {
+        totaldias1 += diasenmes[i];
+    }
     for (let i = 0; i <= mes2; i++) {
         totaldias2 += diasenmes[i]; 2
     }
